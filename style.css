@@ -1,0 +1,168 @@
+body{
+	font-family:  poppins;
+	margin: 0;
+	padding: 0;
+}
+.col-left{
+
+	width: 25%;
+	height: 100vh;
+	background: #f1f1f1;
+    float: left;
+}
+.col-left__logo{
+
+	width: 75px;
+	height: 75px;
+	margin-top: 50px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#col-left__icon-bar
+{
+list-style-type: none;
+margin-top: 50px;
+}
+.col-left__icon-bar__icon-frame{
+	display: block;
+	text-decoration: none;
+	border-bottom: 1px solid #e6e5e5;	
+	width: 100%;
+	height: 25px;
+}
+.col-left__icon-bar__icon-frame-text{
+	display: inline-block;
+}
+.col-left__icon-bar__icon-frame:last-child{
+
+	border:0px;
+	border-top:1px solid #e6e5e5; 
+}
+.col-left__icon-bar__icon-image{
+display: inline-block;
+height:18px;
+width: 18px;
+background-image:url(icons.png);
+background-repeat: no-repeat;
+position: relative;
+top: 6.25px;
+float: right;
+}
+hr{
+	background-color: black;
+}
+#icon1{
+
+	background-position: 0 0;		
+}
+#icon2{
+	background-position: -32 0;
+}
+#icon3{
+	background-position: -64 0;	
+}
+#icon4{
+	background-position: -96 0;
+}
+#icon5{
+	background-position: -128 0;
+}
+#icon6{
+	background-position: -160 0;
+}
+.col-right{
+	width: 75%;
+	height: 100vh;
+	float: right;
+}
+.col-right__main-heading{    
+     margin-left: 20px;
+     color:#2f5567;
+}
+#icon1:hover{
+	background-position: 0 -64;
+}
+#icon2:hover{
+	background-position: -32 -64;
+}
+#icon3:hover{
+	background-position: -64 -64;	
+}
+#icon4:hover{
+	background-position: -96 -64;
+}
+#icon5:hover{
+	background-position: -128 -64;
+}
+#icon6:hover{
+	background-position: -160 -64;
+}
+
+/* Media Query  for tablets*/ 
+@media only screen and (max-width: 700px) {
+      
+.col-left__icon-bar__icon-frame{
+    font-size: 12px;
+}
+.col-left__icon-bar__icon-frame{
+	height: 22px;
+}
+
+}
+
+/* Media Query  for mobiles*/ 
+@media only screen and (max-width: 500px) {
+      
+.col-left__icon-bar__icon-frame-text{
+    display: none !important;
+}
+.col-left__icon-bar__icon-image{
+    height:34px;
+     width: 34px;
+    background-image:url(icons@2x.png);
+}
+.col-left__icon-bar__icon-frame{
+	height: 40px;
+}
+#icon1{
+	background-position: 0 0;		
+}
+#icon2{
+	background-position: -64 0;
+}
+#icon3{
+	background-position: -128 0;	
+}
+#icon4{
+	background-position: -192 0;
+}
+#icon5{
+	background-position: -264 0;
+}
+#icon6{
+	background-position: -320 0;
+}
+#icon1:hover{
+	background-position: 0 -128;		
+}
+#icon2:hover{
+	background-position: -64 -128;
+}
+#icon3:hover{
+	background-position: -128 -128;	
+}
+#icon4:hover{
+	background-position: -192 -128;
+}
+#icon5:hover{
+	background-position: -264 -128;
+}
+#icon6:hover{
+	background-position: -320 -128;
+}
+.col-right__main-heading{
+	font-size: 18px;
+}
+
+}
